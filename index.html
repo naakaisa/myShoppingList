@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="lib/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="lib/script.js"></script>
+    </head>
+
+    <body>
+        <div class="container" style="background: #EEE;">
+            <br/>
+            <h3>My Shopping List</header></h3>
+            <br/>
+        </div>
+        <br/>
+        <div class="container">
+          <div class="tab tab-1">
+            <table id="table" class="table ">
+              <thead class="thead-dark">
+                <tr>
+                <th>Item Name</th>
+                <th>Quantity</th>
+              </tr>
+              </thead>
+              <tr>
+                <td>Shoes</td>
+                <td>2 pairs</td>
+              </tr>
+              <tr>
+                <td>Milk</td>
+                <td>2 tins</td>
+              </tr>
+              <tr>
+                <td>Eggs</td>
+                <td>4 crates</td>
+              </tr>
+              <tr>
+                <td>Test</td>
+                <td>4 crates</td>
+              </tr>
+              <tr>
+                <td>Test </td>
+                <td>5 crates</td>
+              </tr>
+            </table>
+          </div>
+            
+          <div class="tab tab-2">
+            Item Name: <input type="text" name="itemName" id="itemName" class="form-control">
+            Quantity: <input type="text" name="qty" id="qty" class="form-control">
+            
+            <button onclick="addHtmlTableRow()" class ="btn btn-secondary">Add Item</button>
+            <button onclick="editHtmlTableSelectedRow()" class ="btn btn-primary">Edit Item</button> 
+            <button onclick="removeSelectedRow()" class ="btn btn-secondary">Remove Item</button> 
+          </div>
+        </div>
+    </body>
+</html>
